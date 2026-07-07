@@ -134,10 +134,7 @@ Endpoints utilizados de la API v3 de TMDB:
 
 | | |
 |---|---|
-| ![Home](public/screenshots/1.png) | ![Detalle de película](public/screenshots/2.png) |
-| ![Favoritos](public/screenshots/3.png) | ![Búsqueda](public/screenshots/4.png) |
-
-*(Reemplaza los nombres con los archivos que subas: 1.png, 2.png, 3.png, etc.)*
+| ![Home](public/screenshots/1.jpg) | ![Detalle de película](public/screenshots/2.jpg) |
 
 ---
 
