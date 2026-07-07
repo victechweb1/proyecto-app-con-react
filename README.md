@@ -32,20 +32,6 @@ Esta aplicación implementa las siguientes cabeceras de seguridad:
 
 ---
 
-## 🤖 Uso de IA en el desarrollo
-
-Este proyecto fue desarrollado con asistencia de **herramientas de IA generativa** para:
-
-- **Estructurar llamadas a la API de TMDB** con `async/await` y manejo de errores
-- **Diseñar componentes reutilizables** siguiendo buenas prácticas de React
-- **Implementar enlaces a plataformas** (YouTube, Netflix, etc.) desde el detalle de cada película
-- **Validar y optimizar el código** aplicando principios de seguridad y rendimiento
-- **Generar esta documentación** y los comentarios explicativos en el código
-
-> La IA se utilizó como herramienta de apoyo para mejorar la calidad, seguridad y estructura del código, siguiendo las recomendaciones de la rúbrica de evaluación.
-
----
-
 ## 🛠️ Tecnologías
 
 | Tecnología | Versión | Uso |
