@@ -68,17 +68,20 @@ Este proyecto fue desarrollado con asistencia de **herramientas de IA generativa
 git clone https://github.com/victechweb1/proyecto-app-con-react.git
 cd proyecto-app-con-react
 
-# 2. Instalar dependencias
+# 2. Crear archivo .env con tu token de TMDB (https://www.themoviedb.org/settings/api)
+echo "VITE_TMDB_TOKEN=tu_token_aqui" > .env
+
+# 3. Instalar dependencias
 npm install
 
-# 3. Ejecutar en desarrollo (abre en http://localhost:3000)
+# 4. Ejecutar en desarrollo (abre en http://localhost:3000)
 npm run dev
 
-# 4. Compilar para producción
+# 5. Compilar para producción
 npm run build
 ```
 
-> **Nota:** La aplicación usa una API key de TMDB incluida para fines demostrativos. Para producción, reemplázala con tu propia key en `src/lib/tmdb.js`.
+> **Nota:** Necesitas un token de acceso a la API de TMDB. Regístrate en [TMDB](https://www.themoviedb.org/settings/api) y crea un archivo `.env` en la raíz con tu token como se indica arriba.
 
 ---
 
