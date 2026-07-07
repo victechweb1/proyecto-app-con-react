@@ -1,0 +1,10 @@
+Para: Emilio Gonzalo Soto Rojas
+De: Victor Aguilera
+
+Adjunto en el RAR el archivo .env con el token de TMDB ya configurado para que no tengas que crear una cuenta ni generar una API key. Solo tiene que:
+
+1. Extraer el RAR
+2. Ejecutar npm install
+3. Ejecutar npm run dev
+
+La aplicación funciona directamente sin necesidad de registrarse en TMDB.
