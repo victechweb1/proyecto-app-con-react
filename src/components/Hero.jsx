@@ -46,7 +46,7 @@ export default function Hero({ peliculas = [] }) {
         <div className="max-w-2xl">
           <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-white mb-6 tracking-tight text-balance">
             Descubre las{' '}
-            <span className="text-[#18CCF2]">
+            <span className="bg-gradient-to-r from-marca-400 to-purple-400 bg-clip-text text-transparent">
               películas
             </span>{' '}
             que están en el cine
