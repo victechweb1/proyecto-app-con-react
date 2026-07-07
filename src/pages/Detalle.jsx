@@ -181,6 +181,7 @@ export default function Detalle({ esFavorito, onToggleFavorito }) {
         </div>
 
         {/* aca pongo la seccion de donde ver la pelicula */}
+        {/* use ayuda de ia para hacer los proveedores clickeables con links a tmdb */}
         {dondeVer && (
           <section className="mt-16 mb-8">
             <h2 className="text-xl font-semibold text-white mb-6 flex items-center gap-2">
@@ -198,12 +199,19 @@ export default function Detalle({ esFavorito, onToggleFavorito }) {
                   </h3>
                   <div className="flex flex-wrap gap-2">
                     {dondeVer.flatrate.map(p => (
-                      <div key={p.provider_id} className="flex items-center gap-2 text-xs text-gray-300">
+                      <a
+                        key={p.provider_id}
+                        href={dondeVer.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-2 text-xs text-gray-300 hover:text-white transition-colors bg-cine-700/50 hover:bg-cine-700 px-3 py-1.5 rounded-lg"
+                        title={`Ver en ${p.provider_name}`}
+                      >
                         {p.logo_path && (
-                          <img src={getImgUrl(p.logo_path, 'w45')} alt={p.provider_name} className="w-6 h-6 rounded" />
+                          <img src={getImgUrl(p.logo_path, 'w45')} alt={p.provider_name} className="w-5 h-5 rounded" />
                         )}
                         <span>{p.provider_name}</span>
-                      </div>
+                      </a>
                     ))}
                   </div>
                 </div>
@@ -218,12 +226,19 @@ export default function Detalle({ esFavorito, onToggleFavorito }) {
                   </h3>
                   <div className="flex flex-wrap gap-2">
                     {dondeVer.rent.map(p => (
-                      <div key={p.provider_id} className="flex items-center gap-2 text-xs text-gray-300">
+                      <a
+                        key={p.provider_id}
+                        href={dondeVer.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-2 text-xs text-gray-300 hover:text-white transition-colors bg-cine-700/50 hover:bg-cine-700 px-3 py-1.5 rounded-lg"
+                        title={`Alquilar en ${p.provider_name}`}
+                      >
                         {p.logo_path && (
-                          <img src={getImgUrl(p.logo_path, 'w45')} alt={p.provider_name} className="w-6 h-6 rounded" />
+                          <img src={getImgUrl(p.logo_path, 'w45')} alt={p.provider_name} className="w-5 h-5 rounded" />
                         )}
                         <span>{p.provider_name}</span>
-                      </div>
+                      </a>
                     ))}
                   </div>
                 </div>
@@ -238,12 +253,19 @@ export default function Detalle({ esFavorito, onToggleFavorito }) {
                   </h3>
                   <div className="flex flex-wrap gap-2">
                     {dondeVer.buy.map(p => (
-                      <div key={p.provider_id} className="flex items-center gap-2 text-xs text-gray-300">
+                      <a
+                        key={p.provider_id}
+                        href={dondeVer.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-2 text-xs text-gray-300 hover:text-white transition-colors bg-cine-700/50 hover:bg-cine-700 px-3 py-1.5 rounded-lg"
+                        title={`Comprar en ${p.provider_name}`}
+                      >
                         {p.logo_path && (
-                          <img src={getImgUrl(p.logo_path, 'w45')} alt={p.provider_name} className="w-6 h-6 rounded" />
+                          <img src={getImgUrl(p.logo_path, 'w45')} alt={p.provider_name} className="w-5 h-5 rounded" />
                         )}
                         <span>{p.provider_name}</span>
-                      </div>
+                      </a>
                     ))}
                   </div>
                 </div>

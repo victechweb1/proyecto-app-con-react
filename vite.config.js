@@ -18,7 +18,8 @@ export default defineConfig({
       // aca fuerzo el uso de HTTPS
       'Strict-Transport-Security': 'max-age=31536000; includeSubDomains',
       // aca controlo que origenes pueden cargar recursos
-      'Content-Security-Policy': "default-src 'self'; script-src 'self' https://api.themoviedb.org; connect-src 'self' https://api.themoviedb.org https://image.tmdb.org; img-src 'self' https://image.tmdb.org data:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com"
+      // en desarrollo necesito unsafe-inline para el HMR de Vite
+      'Content-Security-Policy': "default-src 'self'; script-src 'self' 'unsafe-inline'; connect-src 'self' ws: http://localhost:3000 https://api.themoviedb.org https://image.tmdb.org; img-src 'self' https://image.tmdb.org data:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com"
     }
   }
 })

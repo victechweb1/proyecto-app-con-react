@@ -29,8 +29,8 @@ export default function Home({ esFavorito, onToggleFavorito }) {
 
   return (
     <main>
-      {/* aca pongo el hero solo en la primera pagina */}
-      {pagina === 1 && <Hero />}
+      {/* aca pongo el hero solo en la primera pagina con el carrusel de peliculas */}
+      {pagina === 1 && <Hero peliculas={peliculas} />}
 
       {/* aca pongo la seccion de la cartelera */}
       <section className="max-w-7xl mx-auto px-4 pb-16">

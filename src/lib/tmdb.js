@@ -1,20 +1,23 @@
 // aca configuro el acceso a la API de TMDB (The Movie Database)
 // pedi ayuda a la ia para estructurar bien las llamadas con async/await
 
-const API_KEY = '66f2d6e72c2eaaaf1e8bdbedbc9993ba'
+const TOKEN = import.meta.env.VITE_TMDB_TOKEN
 const BASE_URL = 'https://api.themoviedb.org/3'
 const LANG = 'es-CL'
 
-// aca hago la llamada generica a la api con manejo de errores
 async function fetchFromTMDB(endpoint, params = {}) {
   const query = new URLSearchParams({
-    api_key: API_KEY,
     language: LANG,
     ...params,
   })
 
   try {
-    const res = await fetch(`${BASE_URL}${endpoint}?${query}`)
+    const res = await fetch(`${BASE_URL}${endpoint}?${query}`, {
+      headers: {
+        Authorization: `Bearer ${TOKEN}`,
+        accept: 'application/json',
+      },
+    })
     if (!res.ok) {
       throw new Error(`error en la api: ${res.status} ${res.statusText}`)
     }

@@ -32,6 +32,20 @@ Esta aplicación implementa las siguientes cabeceras de seguridad:
 
 ---
 
+## 🤖 Uso de IA en el desarrollo
+
+Este proyecto fue desarrollado con asistencia de **herramientas de IA generativa** para:
+
+- **Estructurar llamadas a la API de TMDB** con `async/await` y manejo de errores
+- **Diseñar componentes reutilizables** siguiendo buenas prácticas de React
+- **Implementar enlaces a plataformas** (YouTube, Netflix, etc.) desde el detalle de cada película
+- **Validar y optimizar el código** aplicando principios de seguridad y rendimiento
+- **Generar esta documentación** y los comentarios explicativos en el código
+
+> La IA se utilizó como herramienta de apoyo para mejorar la calidad, seguridad y estructura del código, siguiendo las recomendaciones de la rúbrica de evaluación.
+
+---
+
 ## 🛠️ Tecnologías
 
 | Tecnología | Versión | Uso |
@@ -118,7 +132,12 @@ Endpoints utilizados de la API v3 de TMDB:
 
 ## 📸 Capturas de pantalla
 
-*(Agrega aquí las capturas de la aplicación funcionando)*
+| | |
+|---|---|
+| ![Home](public/screenshots/1.png) | ![Detalle de película](public/screenshots/2.png) |
+| ![Favoritos](public/screenshots/3.png) | ![Búsqueda](public/screenshots/4.png) |
+
+*(Reemplaza los nombres con los archivos que subas: 1.png, 2.png, 3.png, etc.)*
 
 ---
 
